@@ -13,7 +13,7 @@ A practical guide for configuring SSH key-based access, hardening SSH login, ins
 - [GitHub SSH Authentication from the Server](#github-ssh-authentication-from-the-server)
 - [Testing and Validation](#testing-and-validation)
 - [Security Notes](#security-notes)
-
+- [Project Structure](#project-structure)
 
 ## Overview
 
@@ -270,4 +270,12 @@ What should be verified:
 - Disable password login only after SSH key access has been tested successfully.
 - Use separate SSH keys for different purposes when possible.
 - Re-check configuration changes with validation commands before ending the session.
+
+## Project Structure
+
+```text
+.
+├── README.md
+└── docs/
+    └── _Git + VServer Checkliste.pdf
 
