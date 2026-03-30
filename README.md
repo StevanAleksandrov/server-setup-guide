@@ -40,13 +40,13 @@ This creates a private key and a public key.
 Copy the public key to the target server user:
 
 ```bash
-ssh-copy-id your_user@your_server
+ssh-copy-id <your_user>@<your_server>
 ```
 
 Test the SSH login:
 
 ```bash
-ssh your_user@your_server
+ssh <your_user>@<your_server>
 ```
 
 Key-based login should work successfully before changing any SSH security settings.
@@ -80,7 +80,7 @@ sudo systemctl restart ssh
 Open a new terminal session and test SSH access again before closing the current session:
 
 ```bash
-ssh your_user@your_server
+ssh <your_user>@<your_server>
 ```
 
 ## NGINX Installation and Validation
@@ -242,7 +242,7 @@ A successful authentication message confirms that GitHub SSH access works from t
 Useful commands for checking the setup:
 
 ```bash
-ssh your_user@your_server
+ssh <your_user>@<your_server>
 sudo sshd -t
 sudo systemctl status ssh
 sudo systemctl status nginx
